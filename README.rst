@@ -70,6 +70,21 @@ Refer the `django-autocomplete-light documentation about the registry
 <http://django-autocomplete-light.readthedocs.org/en/latest/forms.html#module-autocomplete_light.registry>`_
 for alternative methods.
 
+If the project already uses django-generic-m2m and django-autocomplete-light, a
+good solution is to re-register the project's generic autocomplete with
+name='AutocompleteDocumentRelations', ie.::
+
+    # your project specific autocomplete
+    class AutocompleteProject(autocomplete_light.AutocompleteGenericBase):
+        # ....
+
+    # register for your project needs
+    autocomplete_light.register(AutocompleteProject)
+
+    # registery for documents relations
+    autocomplete_light.register(AutocompleteProject,
+        name='AutocompleteDocumentRelations')
+
 Secure your documents
 ---------------------
 
