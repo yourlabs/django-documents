@@ -17,4 +17,3 @@ class AutocompleteDocumentRelations(
     )
 
 autocomplete_light.register(AutocompleteDocumentRelations)
-print autocomplete_light.registry['AutocompleteDocumentRelations']
