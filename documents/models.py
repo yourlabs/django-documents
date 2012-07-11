@@ -1,13 +1,17 @@
 from django.core import urlresolvers
 from django.db import models
+from django.core.files.storage import FileSystemStorage
 
 from genericm2m.models import RelatedObjectsDescriptor
 
 from .settings import UPLOAD_TO
 
 
+fs = FileSystemStorage(location=UPLOAD_TO)
+
+
 class Document(models.Model):
-    file = models.FileField(upload_to=UPLOAD_TO)
+    file = models.FileField(storage=fs, upload_to=UPLOAD_TO)
     related = RelatedObjectsDescriptor()
 
     def __unicode__(self):
