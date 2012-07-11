@@ -4,6 +4,7 @@ django-documents
 This simple app provides:
 
 - a Document model with:
+
   - a generic many to many relation
   - a file field that uploads to a private directory
   - a method get_download_url()
