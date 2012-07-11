@@ -55,8 +55,8 @@ Add to urls.py::
 
     url(r'^documents/', include('documents.urls')),
 
-**Set settings.UPLOAD_TO** to the absolute path where uploads should be stored.
-This must be private.
+**Set settings.DOCUMENTS_UPLOAD_TO** to the absolute path where uploads should
+be stored. This must be a private directory.
 
 Prepare the generic many to many autocomplete
 ---------------------------------------------
