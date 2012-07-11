@@ -4,7 +4,7 @@ import os.path
 import posixpath
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-DOCUMENT_UPLOAD_TO=os.path.join(PROJECT_ROOT, 'documents')
+DOCUMENTS_UPLOAD_TO=os.path.join(PROJECT_ROOT, 'documents')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
