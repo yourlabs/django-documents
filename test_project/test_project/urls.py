@@ -6,6 +6,13 @@ autocomplete_light.autodiscover()
 # project-specific overrides
 import autocomplete_light_registry
 
+# project specific document permissions
+import documents
+def document_security(sender, request, document, **kwargs):
+    if not request.user.is_staff:
+        raise documents.DownloadForbidden()
+documents.document_pre_download.connect(document_security)
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
