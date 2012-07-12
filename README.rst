@@ -168,9 +168,6 @@ Resources
 - `Git graciously hosted
   <https://github.com/yourlabs/django-documents/>`_ by `GitHub
   <http://github.com>`_,
-- `Documentation graciously hosted
-  <http://django-documents.rtfd.org>`_ by `RTFD
-  <http://rtfd.org>`_,
 - `Package graciously hosted
   <http://pypi.python.org/pypi/django-documents/>`_ by `PyPi
   <http://pypi.python.org/pypi>`_,
