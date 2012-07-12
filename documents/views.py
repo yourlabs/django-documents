@@ -32,6 +32,6 @@ def document_download(request, object_id):
         response["Content-Length"] = statobj.st_size
     if encoding:
         response["Content-Encoding"] = encoding
-    response["Content-Disposition"] = 'attachement; filename=%s' + unicode(
+    response["Content-Disposition"] = 'attachement; filename=' + unicode(
         document)
     return response
