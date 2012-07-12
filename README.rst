@@ -36,6 +36,8 @@ Run the demo of a release in a temporary folder::
     pip install -r requirements.txt
     ./manage.py runserver
 
+Login with test / test.
+
 Or current development sources (might be broken)::
 
     cd /tmp
