@@ -96,3 +96,32 @@ Connect to document_pre_import, for example::
         if not request.user.is_staff:
             raise documents.DownloadForbidden()
     documents.document_pre_download.connect(document_security)
+
+Display documents related to a model
+------------------------------------
+
+Use get_related_documents() from Python::
+
+    from documents.models import get_related_documents
+
+    your_model = YourModel.objects.get(pk=XXX)
+
+    related_documents = get_related_documents(your_model)
+
+Or from a template::
+
+    {% load documents_tags %}
+
+    {% for document in your_model|get_related_documents %}
+        {{ document }}
+    {% endfor %}
+
+Note that get_related_documents() returns a QuerySet, ie. you can get a count::
+
+    get_related_documents(your_model).count()
+
+Or from a template::
+
+    {% with related_documents=your_model|get_related_documents %}
+        {{ related_documents.count }}
+    {% endwith %}

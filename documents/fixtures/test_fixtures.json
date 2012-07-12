@@ -1,0 +1,346 @@
+[
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "document", 
+            "name": "document", 
+            "app_label": "documents"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "migrationhistory", 
+            "name": "migration history", 
+            "app_label": "south"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "relatedobject", 
+            "name": "related object", 
+            "app_label": "genericm2m"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "documents.document", 
+        "fields": {
+            "file": "/home/jpic/env/src/django-documents/test_project/documents/avatar_big.png"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "documents.document", 
+        "fields": {
+            "file": "/home/jpic/env/src/django-documents/test_project/documents/blues_en_mi.png"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 3, 
+            "parent_type": 10, 
+            "object_id": 5, 
+            "creation_date": "2012-07-12T10:37:44.353Z", 
+            "parent_id": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 3, 
+            "parent_type": 10, 
+            "object_id": 6, 
+            "creation_date": "2012-07-12T10:37:44.351Z", 
+            "parent_id": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 2, 
+            "parent_type": 10, 
+            "object_id": 3, 
+            "creation_date": "2012-07-12T10:37:44.350Z", 
+            "parent_id": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 2, 
+            "parent_type": 10, 
+            "object_id": 2, 
+            "creation_date": "2012-07-12T10:37:44.348Z", 
+            "parent_id": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 2, 
+            "parent_type": 10, 
+            "object_id": 1, 
+            "creation_date": "2012-07-12T10:37:20.176Z", 
+            "parent_id": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 2, 
+            "parent_type": 10, 
+            "object_id": 2, 
+            "creation_date": "2012-07-12T10:37:20.174Z", 
+            "parent_id": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 3, 
+            "parent_type": 10, 
+            "object_id": 6, 
+            "creation_date": "2012-07-12T10:37:20.172Z", 
+            "parent_id": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 3, 
+            "parent_type": 10, 
+            "object_id": 4, 
+            "creation_date": "2012-07-12T10:37:20.170Z", 
+            "parent_id": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "genericm2m.relatedobject", 
+        "fields": {
+            "alias": "", 
+            "object_type": 3, 
+            "parent_type": 10, 
+            "object_id": 1, 
+            "creation_date": "2012-07-12T10:37:20.168Z", 
+            "parent_id": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "bluesmen", 
+            "permissions": []
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "jazzmen", 
+            "permissions": []
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.group", 
+        "fields": {
+            "name": "rockers", 
+            "permissions": []
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "test", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-07-12T10:36:11.225Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$ToZ4nd550Tlp$9T4RUZte25pPx9N1Hcu2vdrlInAaDyBaStsfYlgJpzA=", 
+            "email": "tt@tt.tt", 
+            "date_joined": "2012-07-10T12:45:42.845Z"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "lhopkins", 
+            "first_name": "Lightnin", 
+            "last_name": "Hopkins", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-07-11T09:33:19Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$TvKnN8EAcrCc$ep0cTbhTf4AyErM6nF3EyxsHLLD6CpSGGBItlX6fLh8=", 
+            "email": "", 
+            "date_joined": "2012-07-11T09:33:19Z"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "mwatters", 
+            "first_name": "Muddy", 
+            "last_name": "Watters", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-07-11T09:33:58Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Y8nOSnTnIByT$Y87apzSpXDWq6liZtfBJ2L6WcZ3pb+COP4JOo1KNr5g=", 
+            "email": "", 
+            "date_joined": "2012-07-11T09:33:58Z"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "juanluisputa", 
+            "first_name": "John Lee", 
+            "last_name": "Hooker", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-07-11T09:34:21Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$XJ75Bh00CMXv$da+3AXOPSPbPqrpeVM6XMhg2C3M/M+g2ySpTJeH8U9A=", 
+            "email": "", 
+            "date_joined": "2012-07-11T09:34:21Z"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "hsum", 
+            "first_name": "Hubert", 
+            "last_name": "Sumlin", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-07-11T09:34:43Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$HxmzOD6dKKSk$FBkwSUiw+YmlZCeyev/jgKeyDlOsaGk4kvYgw0mLjpY=", 
+            "email": "", 
+            "date_joined": "2012-07-11T09:34:43Z"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "hwolf", 
+            "first_name": "Howlin'", 
+            "last_name": "Wolf", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-07-11T09:34:54Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$CdtR0rjp6uKp$bAN/lA+DyHdG6Xa5PN4fRj8pJLvBLOZZMEMqTS2N+Fk=", 
+            "email": "", 
+            "date_joined": "2012-07-11T09:34:54Z"
+        }
+    }
+]
