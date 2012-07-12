@@ -43,7 +43,7 @@ Or current development sources (might be broken)::
     virtualenv documents_env
     source documents_env/bin/activate
     pip install -e git+https://github.com/yourlabs/django-documents.git#egg=documents
-    cd env/src/documents/test_project
+    cd documents_env/src/documents/test_project
     pip install -r requirements.txt
     ./manage.py runserver
 
