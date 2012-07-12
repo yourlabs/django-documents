@@ -11,7 +11,7 @@ def read(fname):
 
 setup(
     name='django-documents',
-    version='0.0.2',
+    version='0.0.3',
     description='Attach documents to django models',
     author='James Pic',
     author_email='jamespic@gmail.com',
