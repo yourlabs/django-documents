@@ -13,6 +13,16 @@ def document_security(sender, request, document, **kwargs):
         raise documents.DownloadForbidden()
 documents.document_pre_download.connect(document_security)
 
+# test_project specific hack
+import os.path
+from documents.settings import UPLOAD_TO
+from documents.models import Document
+for document in Document.objects.all():
+    name = document.file.name.split('/')[-1]
+    # the setting varies depending on where the project was checked out
+    document.file = os.path.join(UPLOAD_TO, name)
+    document.save()
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
