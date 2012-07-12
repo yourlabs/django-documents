@@ -158,3 +158,22 @@ Or from a template::
     {% with related_documents=your_model|get_related_documents %}
         {{ related_documents.count }}
     {% endwith %}
+
+Resources
+---------
+
+- `Mailing list graciously hosted
+  <http://groups.google.com/group/yourlabs>`_ by `Google
+  <http://groups.google.com>`_
+- `Git graciously hosted
+  <https://github.com/yourlabs/django-documents/>`_ by `GitHub
+  <http://github.com>`_,
+- `Documentation graciously hosted
+  <http://django-documents.rtfd.org>`_ by `RTFD
+  <http://rtfd.org>`_,
+- `Package graciously hosted
+  <http://pypi.python.org/pypi/django-documents/>`_ by `PyPi
+  <http://pypi.python.org/pypi>`_,
+- `Continuous integration graciously hosted
+  <http://travis-ci.org/yourlabs/django-documents>`_ by `Travis-ci
+  <http://travis-ci.org>`_
