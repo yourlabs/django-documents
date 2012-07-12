@@ -16,6 +16,35 @@ This simple app provides:
 - clean admin integration
 - south support
 
+Demo
+----
+
+Run the demo of a release in a temporary folder::
+
+    DOCUMENTS_VERSION="0.0.3"
+
+    cd /tmp
+    rm -rf django-documents documents_env
+    virtualenv documents_env
+    source documents_env/bin/activate
+    pip install django-documents==$DOCUMENTS_VERSION
+    git clone https://github.com/yourlabs/django-documents.git
+    cd django-documents/test_project
+    git checkout $DOCUMENTS_VERSION
+    pip install -r requirements.txt
+    ./manage.py runserver
+
+Or current development sources (might be broken)::
+
+    cd /tmp
+    rm -rf django-documents documents_env
+    virtualenv documents_env
+    source documents_env/bin/activate
+    pip install -e git+https://github.com/yourlabs/django-documents.git#egg=documents
+    cd env/src/documents/test_project
+    pip install -r requirements.txt
+    ./manage.py runserver
+
 Install django-generic-m2m
 --------------------------
 
